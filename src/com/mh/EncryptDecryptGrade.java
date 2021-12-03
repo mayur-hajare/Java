@@ -9,10 +9,10 @@ public class EncryptDecryptGrade {
 
         Scanner scanner=new Scanner(System.in);
         System.out.println("Enter Your Grade : ");
-        float grade=scanner.nextFloat();
-        grade=grade+8;
+        char grade='B';
+        grade= (char) (grade+8);
         System.out.println("Encrypted Grade is : "+grade);
-        grade=grade-8;
+        grade= (char) (grade-8);
         System.out.println("Decrypted Grade is : "+grade);
 
 
