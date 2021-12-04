@@ -2,10 +2,11 @@ package com.mh;
 
 import java.util.Scanner;
 
+
 public class Government_Tax {
     public static void main(String[] args) {
         {
-            double tax = 0, it;
+            double tax , it;
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter income ");
             it = sc.nextDouble();
