@@ -30,6 +30,11 @@ public class StringPrSet {
         System.out.println(str3.indexOf("  "));
         System.out.println(str3.indexOf("   "));
 
+        // Escape Sequence Character
+
+        String str4 = "Hello Mayur,\n\t Have A Good Day..!";
+        System.out.println(str4);
+
 
     }
 }
