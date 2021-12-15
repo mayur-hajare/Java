@@ -32,6 +32,7 @@ public class StringPr {
         String name = str2.replace("name", scanner.next());
         System.out.println(name);
 
+
 */
 
         //Find Double and triple Space in String
