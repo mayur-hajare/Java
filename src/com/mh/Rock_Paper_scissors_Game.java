@@ -1,10 +1,5 @@
 package com.mh;
 
-import com.sun.source.tree.WhileLoopTree;
-
-import javax.sound.midi.Soundbank;
-import javax.swing.*;
-import java.sql.SQLOutput;
 import java.util.Random;
 import java.util.Scanner;
 
