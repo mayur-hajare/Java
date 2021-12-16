@@ -69,19 +69,18 @@ public class Pattern {
 
         //sum of number occurring in table
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter Any Number :");
-        int n=scanner.nextInt();
+        int n = scanner.nextInt();
 
-        int i=1,sum = 0,a;
-        while  (i<=10){
-            a=n*i;
-            sum=sum+a;
-            System.out.println(n+ " * "+i+" = "+a);
+        int i = 1, sum = 0, a;
+        while (i <= 10) {
+            a = n * i;
+            sum = sum + a;
+            System.out.println(n + " * " + i + " = " + a);
             i++;
         }
-        System.out.println("sum of multiplication : "+sum);
-
+        System.out.println("sum of multiplication : " + sum);
 
     }
 }
