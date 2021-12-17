@@ -137,6 +137,7 @@ public class Array {
 */
 
         // find max number in array
+/*
 
         int a[] = {45, 89, 8, 86, 90, 9};
         int temp = 0;
@@ -153,6 +154,28 @@ public class Array {
         System.out.println("Maximum number present in array : " + temp);
         System.out.println("Minimum number present in array : " + temp1);
 
+*/
+        // find given array shorted or not
+        Scanner scanner = new Scanner(System.in);
+        int[] a = new int[5];
+        boolean yes = true;
+
+        System.out.println("Enter Array Elements : ");
+        for (int i = 0; i < a.length; i++) {
+            a[i] = scanner.nextInt();
+        }
+        for (int i = 0; i < a.length - 1; i++) {
+            if (a[i] > a[i + 1]) {
+                yes = false;
+                break;
+            }
+
+        }
+        if (yes) {
+            System.out.println("Shorted.");
+        } else {
+            System.out.println("Not Shorted.");
+        }
 
     }
 }
