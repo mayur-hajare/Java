@@ -1,5 +1,6 @@
 package com.mh;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Array {
@@ -71,7 +72,67 @@ public class Array {
             System.out.println(a[i]);
         }
 *//*
-*/
+         */
+        /*// Calculate average of marks from given array
+        Scanner scanner = new Scanner(System.in);
+        int marks[] = new int[5];
+        int sum = 0, avg = 0;
+
+        for (int j = 0; j < 5; j++) {
+            System.out.print("Enter Marks of Students " + j + " :");
+            marks[j] = scanner.nextInt();
+        }
+        for (int i = 0; i < 5; i++) {
+            sum = sum + marks[i];
+            avg = sum / 5;
+
+
+        }
+        System.out.println("Average of Students Marks  : " + avg + " %");
+        */
+
+        // Addition of 2 matrix
+
+        int a[][] = {{10, 91, 50}, {54, 56, 98}};
+        int b[][] = {{45, 56, 86}, {54, 65, 89}};
+        int sum[][] = new int[2][3];
+
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 3; j++) {
+                sum[i][j] = a[i][j] + b[i][j];
+                System.out.println(sum[i][j]);
+
+            }
+        }
+        System.out.println("");
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(a[i][j] + " ");
+
+            }
+            System.out.println("");
+        }
+
+        System.out.println("    + ");
+
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(b[i][j] + " ");
+
+            }
+            System.out.println(" ");
+        }
+
+        System.out.println("    = ");
+
+
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(sum[i][j] + " ");
+
+            }
+            System.out.println("");
+        }
 
     }
 }
