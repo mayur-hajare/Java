@@ -19,8 +19,25 @@ public class Methods {
             System.out.println("");
 
         }
+    }
 
+    static void pattern1(int n) {
+        for (int j = 1; j <= n; j++) {
+            System.out.println("\n");
+            for (int i = n; i >= j; i--) {
+                System.out.print(" * ");
+            }
+        }
 
+    }
+
+    int sum(int n) {
+        int result = 0;
+
+        for (int i = 0; i <= n; i++) {
+            result += i;
+        }
+        return result;
     }
 
     public static void main(String[] args) {
@@ -30,7 +47,11 @@ public class Methods {
         System.out.println("Enter Number to print pattern : ");
         int b = scanner.nextInt();
         mul(a);
-        pattern(100);
+        pattern(b);
+        Methods obj = new Methods();
+        int c = obj.sum(10);
+        System.out.println(c);
+        pattern1(6);
 
     }
 }
