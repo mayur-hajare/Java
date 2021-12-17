@@ -92,6 +92,7 @@ public class Array {
         */
 
         // Addition of 2 matrix
+/*
 
         int a[][] = {{10, 91, 50}, {54, 56, 98}};
         int b[][] = {{45, 56, 86}, {54, 65, 89}};
@@ -133,6 +134,25 @@ public class Array {
             }
             System.out.println("");
         }
+*/
+
+        // find max number in array
+
+        int a[] = {45, 89, 8, 86, 90, 9};
+        int temp = 0;
+        int temp1 = 99999;
+
+        for (int i = 0; i < a.length; i++) {
+            if (temp < a[i]) {
+                temp = a[i];
+            }
+            if (temp1 > a[i]) {
+                temp1 = a[i];
+            }
+        }
+        System.out.println("Maximum number present in array : " + temp);
+        System.out.println("Minimum number present in array : " + temp1);
+
 
     }
 }
