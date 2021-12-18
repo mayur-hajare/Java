@@ -1,4 +1,3 @@
-import javax.swing.plaf.synth.SynthLookAndFeel;
 import java.util.Scanner;
 
 public class Methods {
@@ -40,6 +39,21 @@ public class Methods {
         return result;
     }
 
+    static int fact(int n) {
+        int factorial = 0;
+        if (n == 0 || n == 1)
+            return 1;
+        else
+            factorial = n * fact(n - 1);
+        return factorial;
+    }
+
+    float fahr(float c) {
+
+        return (float) ((c * 1.8) + 32);
+
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter Number to print table : ");
@@ -52,6 +66,9 @@ public class Methods {
         int c = obj.sum(10);
         System.out.println(c);
         pattern1(6);
+        int fact = fact(5);
+        System.out.println("\n" + fact);
 
+        System.out.println(obj.fahr(23.0F));
     }
 }
