@@ -70,5 +70,6 @@ public class Methods {
         System.out.println("\n" + fact);
 
         System.out.println(obj.fahr(23.0F));
+
     }
 }
