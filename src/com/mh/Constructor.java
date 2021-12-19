@@ -51,6 +51,7 @@ public class Constructor {
 //        employee.setId(12);
 //        employee.setSalary(12500);
 //        employee.setName("Mayur");
+
         System.out.println(employee.getName() + "\n" + employee.getId() + "\n" + employee.getSalary());
         System.out.println(emp.getName() + "\n" + emp.getId() + "\n" + emp.getSalary());
 
