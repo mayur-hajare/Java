@@ -32,6 +32,7 @@ class SubclassRoom extends BaseRoom {
     }
 }
 
+
 class Room extends SubclassRoom {
     int num;
 
