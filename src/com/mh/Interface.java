@@ -4,6 +4,7 @@ import java.util.zip.Deflater;
 
 interface tv {
     void On();
+
     void off();
 }
 
