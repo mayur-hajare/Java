@@ -1,5 +1,7 @@
 package com.mh;
 
+import javax.xml.crypto.dsig.spec.HMACParameterSpec;
+
 abstract class Monkey {
     public void Jump() {
         System.out.println("Monkey Jump");
@@ -9,13 +11,16 @@ abstract class Monkey {
         System.out.println("Monkey Bite");
     }
 
-    abstract public void eat();
-
-    abstract public void sleep();
 
 }
 
-class Human extends Monkey {
+interface BasicAnimal {
+    abstract public void eat();
+
+    abstract public void sleep();
+}
+
+class Human extends Monkey implements BasicAnimal {
     @Override
     public void eat() {
         System.out.println("Human Eats");
@@ -25,28 +30,27 @@ class Human extends Monkey {
     public void sleep() {
         System.out.println("Human sleep");
     }
+
+    public void speak() {
+        System.out.println("Speaking...");
+    }
 }
 
 public class Abstract1 {
     public static void main(String[] args) {
 
-        Monkey monkey = new Monkey() {
-            @Override
-            public void eat() {
-                System.out.println("Monkey eats");
-            }
-
-            @Override
-            public void sleep() {
-                System.out.println("Monkey sleeps");
-            }
-        };
-        monkey.eat();
-        monkey.sleep();
-        monkey.Bite();
-        monkey.Jump();
         Human human = new Human();
+
+        Monkey monkey = new Human();
+        monkey.Jump();
+        monkey.Bite();
+        // monkey.speak();  --> Error
+       /* monkey.eat();
+        monkey.sleep();*/
+        human.Bite();
+        human.Jump();
         human.eat();
         human.sleep();
+
     }
 }

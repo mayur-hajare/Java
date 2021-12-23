@@ -38,6 +38,29 @@ class BallPen extends FountainPen {
     }
 }
 
+abstract class TelePhone {
+
+    abstract public void ring();
+
+    abstract public void lift();
+
+    abstract public void disconnect();
+}
+
+class SmartPhone {
+
+    public void ring() {
+        System.out.println("Phone Ringing...");
+    }
+
+    public void lift() {
+        System.out.println("Phone Connected...");
+    }
+
+    public void disconnected() {
+        System.out.println("Phone Disconnected...");
+    }
+}
 
 public class Abstract {
     public static void main(String[] args) {
@@ -48,6 +71,11 @@ public class Abstract {
         p.refill();
         b.write();
         b.refill();
+
+        SmartPhone sm = new SmartPhone();
+        sm.ring();
+        sm.lift();
+        sm.disconnected();
 
     }
 }
