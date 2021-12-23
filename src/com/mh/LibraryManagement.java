@@ -14,20 +14,21 @@ class displayBook {
 
 }
 
-class issueBooks extends displayBook {
+class issueBooks {
     Scanner scanner = new Scanner(System.in);
     String bookName;
 
     public String issuedBook() {
-        System.out.println(Arrays.toString(books));
-        System.out.println("Enter Book Name You want ti Issue : ");
-        bookName = scanner.next();
+        displayBook displayBook = new displayBook();
 
-        for (int i = 0; i < books.length; i++) {
-            if (books[i].equals(bookName)) {
-                books[i] = "";
+        System.out.println(Arrays.toString(displayBook.books));
+        System.out.println("Enter Book Name You want to Issue : ");
+        bookName = scanner.next();
+        for (int i = 0; i < displayBook.books.length; i++) {
+            if (displayBook.books[i].equals(bookName)) {
+                displayBook.books[i] = null;
+                i++;
             }
-            displayBook displayBook = new displayBook();
             displayBook.Display();
         }
 
