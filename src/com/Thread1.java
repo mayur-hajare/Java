@@ -29,7 +29,7 @@ public class Thread1 {
         System.out.println(welcome.getState());
         gm.start();
         try {
-            welcome.wait(300);
+            welcome.wait(300); //welcome.sleep(200);
 
         } catch (Exception e) {
             System.out.println(e);
